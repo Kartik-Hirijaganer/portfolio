@@ -1,449 +1,991 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Kartik Hirijaganer</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<script src="https://kit.fontawesome.com/b9307d2128.js" crossorigin="anonymous">
-		document.getElementById('year').textContent = new Date().getFullYear();
-	</script>
-	<link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Kartik Rajendra | Data Engineer & AI Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon-32x32.png" rel="icon">
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <!-- <link rel="icon" type="assets/img/" href="favicon.ico"> -->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial:wght@400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: EasyFolio
+  * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
+  * Updated: Feb 21 2025 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body class="homepage is-preload">
-	<div id="page-wrapper">
-		<!-- Header -->
-		<section id="header">
-			<div class="container">
-				<!-- Nav -->
-				<nav id="nav">
-					<ul>
-						<li>
-							<a href="#" class="icon fa-chart-bar"><span>Explore</span></a>
-							<ul>
-								<li><a href="#about">About</a></li>
-								<li><a href="#skills">Technical Skills</a></li>
-								<li><a href="#awards">Awards and Certificates</a></li>
-								<li><a href="#footer">Get In Touch</a></li>
-							</ul>
-						</li>
-						<li><a class="icon solid fa-file" href="assets/Kartik-Hirijaganer-Resume.pdf"
-								download="Kartik-Hirijaganer-Resume.pdf"><span>Resume</span></a></li>
-						<li><a class="icon solid fa-code-branch" href="#projects"><span>Projects</span></a></li>
-						<li><a class="icon solid fa-user-graduate" href="#education"><span>Education</span></a></li>
-						<li><a class="icon solid fa-briefcase" href="#experience"><span>Experience</span></a></li>
-					</ul>
-					<ul>
-						<li><a><span class="me-4">College Park, MD</span>|</a></li>
-						<li><a><span class="me-4">(240)-854-7848</span>|</a></li>
-						<li><a href="https://www.linkedin.com/in/kartik-hirijaganer/"><span class="me-4">LinkedIn</span>|</a></li>
-						<li><a href="https://github.com/Kartik-Hirijaganer/"><span class="me-4">GitHub</span>|</a></li>
-						<li><a href="https://public.tableau.com/app/profile/kartik.hirijaganer/vizzes"><span>Tableau</span></a></li>
-					</ul>
-				</nav>
-				<div class="row">
-					<div class="col col-6">
-						<h1 id="logo">Hi, I 'am Kartik Hirijaganer!</h1>
-						<h2>A Master's in Information Systems Student.</h2>
-						<div style="text-align: left;">
-							<button class="button"><a style="border: none;color: #FFF;" href="#footer">Get In Touch</a></button>
-						</div>
-					</div>
-					<div class="col col-6">
-						<img style="border-radius: 100%;border: 5px;border-style: solid; width: 20em;height: 24em;"
-							src="assets/images/photo.jpeg" alt="linkedIn photo">
-					</div>
-				</div>
+<body class="index-page">
 
-			</div>
-		</section>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-		<section id="features">
-			<!-- About -->
-			<div id="about" class="container">
-				<header>
-					<h1>About</h1>
-					<hr style="height: 0.2em;">
-				</header>
-				<div class="row">
-					<p>A first-year Information Systems student at the University of Maryland's Smith School of Business. I am
-						passionate about working with a variety of clients to help them manage and deliver software technology
-						projects. Before attending
-						Smith, I worked as a software developer at Capgemini, and Biz2Credit / Biz2X. These client-facing roles
-						helped me develop
-						problem-solving, project management and communication skills. Eagerly seeking internships in Technical
-						Project Management roles.</p>
-				</div>
-			</div>
-			<!-- Skills -->
-			<div id="skills" class="container">
-				<header>
-					<h1>Technical Skills</h1>
-					<hr style="height: 0.2em;">
-				</header>
-				<div class="row">
-					<div>
-						<p><strong>Programming: </strong>Python (Pandas, NumPy, Scikit-learn, Seaborn, Lifelines, Plotly, Matplotlib), R, SQL, NoSQL, JavaScript,
-						Java</p>
-						<p><strong>Machine Learning:</strong>Statistical Model, Survival Analysis, Random Forest, Regression Analysis</p>
-						<p><strong>Database: </strong>SQL, Mircrosoft SQL Server, MongoDB, AWS DynamoDB</p>
-						<p><strong>Amazon Web Services:</strong>S3, AWS Glue, RDS, Redshift, Lambda, API Gateway, QuickSight, CloudWatch, CloudFormation, SQS, SNS</p>
-						<p><strong>Analytics: </strong>Tableau, Power BI, Excel, Git</p>
-						<p><strong>Web Technologies: </strong>Node.js, Angular, Express.js, Bootstrap, Handlebar, Html, CSS</p>
-						<p><strong>Other Tools: </strong>Atlas MongoDB, MongoDB Compass, Git, Jira, Azure DevOps, Postman</p>
-					</div>
-				</div>
-			</div>
-			<!-- Projects -->
-			<div id="projects" class="container mb-5">
-				<header>
-					<h1>Projects</h1>
-					<hr style="height: 0.2em;">
-				</header>
-				<div class="row">
-					<div id="content" class="col-12 col-12-medium">
-						<article class="box post">
-							<header>
-								<h2 class="mb-2"><strong><a href="https://github.com/Kartik-Hirijaganer/Survival-Prediction">Transplant Survival Prediction for Hematopoietic Cell Transplantation (HCT)</a></strong></h2>
-								<h3><strong>Python | Pandas | NumPy, Scikit-Learn | Lifelines | XGBoost | LightGBM | StatsModel</strong></h3>
-							</header>
-							<a href="https://github.com/Kartik-Hirijaganer/Survival-Prediction" class="image featured"
-								style="width: 40.8em; height: 26.8em; margin-left: 16em;"><img src="assets/images/HCTTheme.png"
-									style="width: 40em; height: 26em;" alt="" /></a>
-							<ul>
-								<li>
-									<p>Participated in kaggle competition to develop survival predictive models to improve the prediction of transplant survival for
-									patients undergoing allogeneic Hematopoietic Cell Transplantation (HCT).</p>
-								</li>
-								<li>
-									<p>Identifying top 5 features increasing the hazard risk and top 5 features decreasing the risk.</p>
-								</li>
-								<li><p>Key insights from feature importance analysis suggest that comorbidities, disease type, and cytogenetic risk scores play
-								a crucial role in survival prediction.</p></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="https://github.com/Kartik-Hirijaganer/Survival-Prediction"
-										class="button icon solid fa-file">Source Code</a></li>
-							</ul>
-						</article>
-					</div>
-					<div id="content" class="col-12 col-12-medium">
-						<article class="box post">
-							<header>
-								<h2 class="mb-2"><strong><a href="https://github.com/Kartik-Hirijaganer/Energy_Transformation_Analysis">Energy Transition Analysis</a></strong></h2>
-								<h3><strong>Python | Pandas | Plotly | Matplotlib</strong></h3>
-							</header>
-							<a href="https://github.com/Kartik-Hirijaganer/Energy_Transformation_Analysis" class="image featured"
-								style="width: 40.8em; height: 26.8em; margin-left: 16em;"><img src="assets/images/energy_transformation.png"
-									style="width: 40em; height: 26em;" alt="" /></a>
-							<ul>
-								<li>
-									<p>Analyzed CO2 emissions vs. population growth in the Euro Area (1970-2010), uncovering a shift in emissions trends
-									post-2009.</p>
-								</li>
-								<li>
-									<p>Identified key drivers of reduced fossil fuel dependency, including increased renewable energy imports and urbanization.</p>
-								</li>
-								<li>
-									<p>Delivered presentation using interactive visualizations to effectively communicate findings, supporting understanding of
-									Euro Area’s transition to sustainable energy.</p>
-								</li>
-							</ul>
-							<ul class="actions">
-								<li><a href="https://github.com/Kartik-Hirijaganer/Energy_Transformation_Analysis" class="button icon solid fa-file">Source
-										Code</a></li>
-							</ul>
-						</article>
-					</div>
-					<div></div>
-					<div id="content" class="col-12 col-12-medium">
-						<article class="box post">
-							<header>
-								<h2 class="mb-2"><strong><a href="https://github.com/Kartik-Hirijaganer/Suicide_Analysis">Suicide Analysis using World Data</a></strong></h2>
-								<h3><strong>Python | Pandas | NumPy | Scikit-Learn | Matplotlib & Seaborn | Plotly | StatsModels | SHAP | DMBA | Handlebars (For PDF)</strong></h3>
-							</header>
-							<a href="https://github.com/Kartik-Hirijaganer/Suicide_Analysis" class="image featured"
-								style="width: 40.8em; height: 26.8em; margin-left: 16em;"><img src="assets/images/suicideAnalysisTheme.png"
-									style="width: 40em; height: 26em;" alt="" /></a>
-							<ul>
-								<li>
-									<p>This project aims to identify the most influencing factors responsible for the suicide mortality rate in the world.</p>
-								</li>
-								<li>
-									<p>Data from World Bank Data catalog was used for this analysis.</p>
-								</li>
-								<li><p>Identified the top 5 influencing factors for suicide rate mortality.</p></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="https://github.com/Kartik-Hirijaganer/Suicide_Analysis"
-										class="button icon solid fa-file">Source Code</a></li>
-							</ul>
-						</article>
-					</div>
-					<div></div>
-					<div id="content" class="col-12 col-12-medium">
-						<article class="box post">
-							<header>
-								<h2 class="mb-2"><strong><a href="https://github.com/Kartik-Hirijaganer/Personal-Finance-Manager">Personal Finance Tracker</a></strong></h2>
-								<h3><strong>Angular | Ag-grid, Ag-charts | Node.js | Express.js | MongoDB | Bootstrap | JWT | RESTful
-										API | Handlebars (For PDF)</strong></h3>
-							</header>
-							<a href="https://github.com/Kartik-Hirijaganer/Personal-Finance-Manager" class="image featured"
-								style="width: 40.8em; height: 26.8em; margin-left: 16em;"><img src="assets/images/pft-dashboard.png"
-									style="width: 40em; height: 26em;" alt="" /></a>
-							<ul>
-								<li>
-									<p>A full-stack website designed to empower users to effortlessly track and monitor their finances,
-										providing a
-										comprehensive overview of their expenses
-										and financial activities.</p>
-								</li>
-								<li>
-									<p>Features include account management, a summary dashboard, tracking monthly income, expenses and
-										liabilities,
-										and a downloadable six-month cash flow chart in PDF format.</p>
-								</li>
-							</ul>
-							<ul class="actions">
-								<li><a href="https://github.com/Kartik-Hirijaganer/Personal-Finance-Manager"
-										class="button icon solid fa-file">Source Code</a></li>
-							</ul>
-						</article>
-					</div>
-					<div></div>
-					<div id="content" class="col-12 col-12-medium">
-						<!-- Post -->
-						<article class="box post">
-							<header>
-								<h2 class="mb-2"><strong><a href="https://github.com/Kartik-Hirijaganer/Flight_Booking_System">Flight Booking System</a></strong></h2>
-								<h3><strong>Angular | Node.js | Express.js | MongoDB | Bootstrap | JWT |
-										RazorPay</strong></h3>
-							</header>
-							<a href="https://github.com/Kartik-Hirijaganer/Flight_Booking_System" class="image featured"
-								style="width: 40.8em; height: 26.8em; margin-left: 16em;"><img src="assets/images/flight-project.png"
-									style="width: 40em; height: 26em;" alt="" /></a>
-							<ul>
-								<li>
-									<p>A full-stack website designed to enable users to search and book flight tickets online.</p>
-								</li>
-								<li>
-									<p>Features include user account, flight search, available flights dashboard, razorpay payment
-										gateway,
-										and a flight ticket in PDF format.</p>
-								</li>
-							</ul>
-							<ul class="actions">
-								<li><a href="https://github.com/Kartik-Hirijaganer/Flight_Booking_System"
-										class="button icon solid fa-file">Source Code</a></li>
-							</ul>
-						</article>
-					</div>
-				</div>
-			</div>
-			<!-- Education -->
-			<div id="education" class="container">
-				<header>
-					<h1>Education</h1>
-					<hr style="height: 0.2em;">
-				</header>
-				<div class="row">
-					<article class="box post">
-						<header>
-							<h2 style="margin-bottom: 2px;"><strong>University of Maryland - College Park</strong> (In Progress)</h2>
-							<h4><strong>Degree: </strong>Master of Science</h4>
-							<h4><strong>Major: </strong>Information Systems</h4>
-							<h4><strong>Duration: </strong>August 2024 - December 2025</h4>
-							<h4><strong>Location: </strong>College Park, Maryland, USA</h4>
-							<h4><strong>GPA: </strong>3.9/4</h4>
-						</header>
-						<br>
-						<header style="margin-bottom: 35px;">
-							<h2 style="margin-bottom: 2px;"><strong>University of Mumbai</strong></h2>
-							<h4><strong>Degree: </strong>Bachelor of Engineering</h4>
-							<h4><strong>Major: </strong>Electronics</h4>
-							<h4><strong>Duration: </strong>August 2016 - October 2020</h4>
-							<h4><strong>Location: </strong>Mumbai, India</h4>
-							<h4><strong>GPA: </strong>7.52/10</h4>
-						</header>
-					</article>
-				</div>
-			</div>
-			<!-- Experience -->
-			<div id="experience" class="container">
-				<header>
-					<h1>Experience</h1>
-					<hr style="height: 0.2em;">
-					<div style="margin-bottom: 35px;">
-						<h2 style="margin-bottom: 2px;"><strong>University of Maryland, College Park, USA</strong></h2>
-						<h3><strong>Title: </strong>Graduate Lab Ambassador<span style="margin-left: 40.5em;font-style: italic;">September
-								2024 – Present</span></h3>
-						<ul>
-							<li>
-								<p>Managed daily lab operations, organized and maintained lab infrastructure, assisted the professor with lab sessions,
-								supported
-								students in sessions, and oversaw inventory management.</p>
-							</li>
-							<li>
-								<p>Developed a relational database for inventory management for over 2000 lab equipment, using Microsoft SQL Server on AWS
-								RDS, ensuring efficient tracking and management of lab resources.</p>
-							</li>
-							<li>
-								<p>Developed an interactive Tableau dashboard for inventory management, extracting data from AWS RDS (Microsoft SQL Server)
-								into Excel for daily updates, providing insights into equipment usage, availability, and conditions.</p>
-							</li>
-						</ul>
-					</div>
-					<div style="margin-bottom: 35px;">
-						<h2 style="margin-bottom: 2px;"><strong>Biz2Credit Info Services Private Limited, Mumbai, India</strong></h2>
-						<h3><strong>Title: </strong>Software Engineer<span style="margin-left: 45em;font-style: italic;">January
-								2023 – July 2024</span></h3>
-						<ul>
-							<li>
-								<p>Engineered a robust ETL framework for a banking client using AWS services (S3, Glue, RDS) and Python, processing over 
-									5,000 loan applications daily, which improved data processing efficiency by 60%.</p>
-							</li>
-							<li>
-								<p>Led an 8-member team to revamp a banking client’s Credit Analysis Memorandum (CAM), communicating with stakeholders to
-								align with project requirements. Reduced report size by 40% earning a 'Functional Award'.</p>
-							</li>
-							<li>
-								<p>Initiated a project that consolidated all steps of developing and updating CAM reports into one tool. The tool allowed
-								developers
-								to complete all steps with one click or individually, resulting in a 50% reduction in time spent on client deliverables.</p>
-							</li>
-						</ul>
-					</div>
-					<div style="margin-bottom: 35px;">
-						<h2 style="margin-bottom: 2px;"><strong>Capgemini Technology Services India Limited, Mumbai, India</strong></h2>
-						<h3 style="margin-bottom: 2px;"><strong>Title: </strong>Associate Consultant<span
-								style="margin-left: 40em;font-style: italic;">September 2020 –
-								January 2023</span></h3>
-						<ul>
-							<li>
-								<p>Performed data analysis on order workflows, identifying insufficient inventory as the most common cause for order
-								cancellation.
-								Designed and implemented a solution reducing the 4% store cancellation rate to zero by optimizing workflow.</p>
-							</li>
-							<li>
-								<p>Collaborated with business stakeholders to design and implement 5 interactive dashboards using Tableau, delivering
-								real-time
-								insights for improved decision-making and analytics.</p>
-							</li>
-							<li>
-								<p>Implemented AWS serverless infrastructure, to integrate the client system with third-party ensuring minimal impact on
-								existing
-								services. Developed script to activate 5,000 stores, enabling online order through third-party portal from the activated
-								stores.</p>
-							</li>
-						</ul>
-					</div>
-				</header>
-			</div>
-			<!-- Awards and Certificates -->
-			 
-			<div id="awards" class="container">
-				<header>
-					<h1>Awards and Certificates</h1>
-					<hr style="height: 0.2em;">
-					<h2 style="margin-bottom: 2px;"><strong>Certificates</strong></h2>
-					<div style="margin-bottom: 35px;">
-						<ul>
-							<li>
-								<h3><span class="certs_awards">AWS Certified Developer - Associate</span>
-									<span style="margin-left: 41.2em;font-style: italic;">January 2024</span>
-								</h3>
-							</li>
-							<li>
-								<h3><span class="certs_awards">AWS Certified Data Engineer - Associate</span>
-									<span style="margin-left: 39.9em;font-style: italic;">In Progress</span>
-								</h3>
-							</li>
-							<li>
-								<h3><span class="certs_awards">Certified Scrum Master - Scrum Alliance</span>
-									<span style="margin-left: 40.8em;font-style: italic;">July 2024</span>
-								</h3>
-							</li>
-						</ul>
-					</div>
-					<h2 style="margin-bottom: 2px;"><strong>Awards</strong></h2>
-					<div style="margin-bottom: 35px;">
-						<ul>
-							<li>
-								<h3><span class="certs_awards">Functional Award - Biz2X</span>
-									<span style="margin-left: 48.5em;font-style: italic;">March 2024</span>
-								</h3>
-							</li>
-							<li>
-								<h3><span class="certs_awards">Functional Award - Biz2Credit</span>
-									<span style="margin-left: 43.2em;font-style: italic;">December 2024</span>
-								</h3>
-							</li>
-						</ul>
-					</div>
-				</header>
-			</div>
-		</section>
-		<!-- Footer -->
-		<section id="footer">
-			<div class="container">
-				<header>
-					<h2><strong>Get in touch:</strong></h2>
-				</header>
-				<div class="row">
-					<div class="col-3"></div>
-					<div class="col-6 col-12-medium">
-						<section>
-							<form method="post" action="#">
-								<div class="row gtr-50">
-									<div class="col-6 col-12-small">
-										<input id="name" name="name" placeholder="Name" type="text" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input id="email" name="email" placeholder="Email" type="text" />
-									</div>
-									<div class="col-12">
-										<textarea id="message" name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<button type="button" onclick="sendEmail()">
-											Send Message
-										</button>
-									</div>
-								</div>
-							</form>
-						</section>
-					</div>
-				</div>
-			</div>
-			<div id="copyright" class="container">
-				<ul class="links">
-					<li>kartikh@umd.edu.com</li>
-					<li>&copy;&nbsp;
-						<script>document.write(new Date().getFullYear());</script>&nbsp;Kartik Hirijaganer
-					</li>
-					<li>Template designed by <a href="https://html5up.net">HTML5 UP</a>, used under CC BY 3.0.</li>
-				</ul>
-				<!-- To be implemented -->
-				<!-- <ul class="links">
-					<li><strong>No of visits:</strong> <span id="visitCount">0</li>
-				</ul> -->
-			</div>
-		</section>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Kartik R. Hirijaganer</h1>
+      </a>
 
-	</div>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li class="dropdown"><a href="#"><span>Experience</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#experience">Premier Health Group (Present)</a></li>
+              <li><a href="#umd">University of Maryland</a></li>
+              <li><a href="#biz2x">Biz2Credit / Biz2X</a></li>
+              <li><a href="#capgemini">Capgemini</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Education</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#education">University of Maryland (Present)</a></li>
+              <li><a href="#mumbai_university">University of Mumbai</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Misc</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#resume">Resume</a></li>
+              <li><a href="#certificates">Certifications</a></li>
+              <li><a href="#skills">Skills</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="script.js"></script>
+      <div class="header-social-links">
+        <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> -->
+        <a href="https://github.com/Kartik-Hirijaganer" class="facebook"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/__kartik98__" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/kartik-hirijaganer" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h2>Data Engineer | AI Innovator | Data Science Enthusiast</h2>
+            <p class="lead">Solving real-world problems through AI-powered solutions, scalable data pipelines, and insightful analytics</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="300">
+              <a href="#portfolio" class="btn btn-primary">View My Work</a>
+              <a href="#contact" class="btn btn-outline">Let's Connect</a>
+            </div>
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+              <div class="stat-item">
+                <span class="stat-number">4+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">8</span>
+                <span class="stat-label">Projects Completed</span>
+              </div>
+              <!-- <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Happy Clients</span>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="hero-image">
+              <img src="assets/img/person/main_page.jpeg" alt="Portfolio Hero Image" class="img-fluid" data-aos="zoom-out" data-aos-delay="300">
+              <div class="shape-1"></div>
+              <div class="shape-2"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p class="lead mb-4" style="text-align: justify;">I'm Kartik, a graduate student in Information Systems at the University of Maryland,
+          passionate about building scalable data solutions and applying AI to solve real-world challenges.</p>
+        
+        <p class="lead mb-4" style="text-align: justify;">Currently, I’m working as a Technical Intern at Premier Health Group, where I’m helping
+          design and implement an internal
+          IT system to streamline data collection and build a robust data pipeline.</p>
+        
+        <p class="lead mb-4" style="text-align: justify;">I enjoy bridging technical complexity with practical outcomes—whether that’s through developing
+          dashboards, deploying machine learning models, or creating intelligent agents with Generative AI.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6 position-relative" data-aos="fade-right" data-aos-delay="200">
+            <div class="about-image">
+              <img src="assets/img/person/profile_img.jpeg" alt="Profile Image" class="img-fluid rounded-4">
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="about-content">
+              <span class="subtitle">About Me</span>
+
+              <p class="mb-4">My career interests lie at the intersection of Data Engineering, Generative AI, and
+              Applied Data Science, and I’m actively seeking full-time opportunities to contribute to innovative, data-driven teams</p>
+
+              <div class="personal-info">
+                <div class="row g-4">
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Name</span>
+                      <span class="value">Kartik Hirijaganer</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Phone</span>
+                      <span class="value">+1 240 854 7848</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Age</span>
+                      <span class="value">26 Years</span>
+                    </div>
+                  </div>
+
+                  <div class="col-6">
+                    <div class="info-item">
+                      <span class="label">Email</span>
+                      <span class="value">kartikhirijaganer@gmail.com</span>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 skills-animation">
+          <h2>Progamming Languages</h2>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Python</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">R Programming</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">PySpark</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">JavaScript</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Node.js</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Angular</h3>
+            </div>
+          </div>
+          <h2>Cloud Services</h2>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">AWS</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Azure</h3>
+            </div>
+          </div>
+          <h2>Data Engineering</h2>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">ETL</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Data Warehousing</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">AWS Redshift</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">HIVE</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">PIG</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Hapdoop</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Apache Spark</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Apache Airflow</h3>
+            </div>
+          </div>
+          <h2>Databases</h2>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Microsoft SQL Server</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">MYSQL</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">MongoDB</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">AWS DynamoDB</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Neo4j</h3>
+            </div>
+          </div>
+          <h2>Data Science</h2>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Hypothesis</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Random Forest</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">K-Nearest Neighbors</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">K-Means Clustering</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Scikit-Learn</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">A/B Testing</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">TensorFlow</h3>
+            </div>
+          </div>
+          <h2>Data Visualization</h2>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Tableau</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Microsoft Suite (Excel, PowerPoint, Word, Outlook)</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Power BI</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Matplotlib</h3>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-box">
+              <h3 style="text-align: center;">Searborn</h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <a href="assets/pdf/Kartik_Hirijaganer_Resume.pdf" download>
+          <h5 style="margin-top: 1rem;">Download Resume</h5>    
+        </a>
+      </div><!-- End Section Title -->
+
+    </section><!-- /Resume Section -->
+
+    <!-- Experience Section -->
+    <section id="experience" class="resume section">
+    
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+        <div class="row">
+          <div class="col-12">
+            <div class="resume-wrapper">
+              <div class="resume-block" data-aos="fade-up">
+                <h2>Work Experience</h2>
+    
+                <div class="timeline">
+                  <div id="umd" class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">Premier Health Group</h4>
+                      <span class="period">Jun, 2025 - Current</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Data Engineer Intern</h3>
+                      <p class="description">Designed and implemented a data pipeline to ingest information from multiple
+                        sources and store it in a centralized data
+                        warehouse, enabling streamlined access for advanced analytics and reporting.</p>
+                    </div>
+                  </div>
+
+                  <div id="biz2x" class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">University of Maryland</h4>
+                      <span class="period">Sep, 2024 - May, 2025</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Graduate Lab Ambassador</h3>
+                      <ul>
+                        <li class="description">Developed a relational database in MYSQL using AWS RDS, to manage inventory
+                          for 2,000+ lab equipment, integrated and
+                          published an interactive Tableau dashboard for real time insights and data visualization</li>
+                        <li class="description">Organize daily lab operations, identify lab equipment requiring replacement
+                          or tuning for upcoming lab sessions, assist
+                          the professor with lab sessions, and oversee inventory management for over 2,000+ lab equipment
+                          items</li>
+                      </ul>
+                      <p></p>
+                    </div>
+                  </div>
+    
+                  <div id="capgemini" class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">Biz2Credit / Biz2X</h4>
+                      <span class="period">Jan, 2023 - Jul, 2024</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Software Engineer</h3>
+                      <ul>
+                        <li class="description">Engineered a robust ETL framework for a banking client using AWS S3, AWS
+                          Glue, RDS, Python and Redshift as data
+                          warehouse, processing over 5,000 loan applications daily, which improved data processing
+                          efficiency by 60%</li>
+                        <li class="description">Built Tableau dashboards to track key KPIs, like monthly application trends,
+                          approval and rejection rates, average FICO
+                          scores, and application status, reducing report generation time by 40% and enabling data-driven
+                          decisions for senior
+                          leadership</li>
+                      </ul>
+                      <p></p>
+                    </div>
+                  </div>
+    
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">Capgemini</h4>
+                      <span class="period">Sep, 2020 - Jan, 2023</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Associate Consultant</h3>
+                      <ul>
+                        <li class="description">Analyzed data for a major fast-food franchise, to investigate online order
+                          cancellations. Identified insufficient
+                          inventory as the main cause, implemented solution using AWS lambda, API Gateway, DynamoDB reducing
+                          the 4% store
+                          cancellation rate to zero</li>
+                        <li class="description">Developed Tableau dashboards to track 4 KPIs including regional sales
+                          performance, product popularity, order type
+                          distribution, and online order cancellation reasons to optimize business operations and enhance
+                          customer satisfaction</li>
+                      </ul>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    
+    </section><!-- /Experience Section -->
+
+    <!-- Education Section -->
+    <section id="education" class="resume section">   
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+        <div class="row">
+          <div class="col-12">
+            <div class="resume-wrapper">
+              <div class="resume-block" data-aos="fade-up" data-aos-delay="100">
+                <h2>My Education</h2>
+    
+                <div class="timeline">
+                  <div id="mumbai_university" class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-left">
+                      <h4 class="company">University of Maryland - College Park</h4>
+                      <span class="period">2024-2025</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Masters in Information Systems</h3>
+                      <h4 class="position">GPA - 3.9</h4>
+                      <p class="description"><span style="font-weight: 500;">Relevant Courses:&nbsp;</span>Designing AI
+                        systems, Data Models, Data Mining and Predictive Analysis, Big Data and Cloud Computing</p>
+                    </div>
+                  </div>
+    
+                  <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-left">
+                      <h4 class="company">University of Mumbai</h4>
+                      <span class="period">2016 - 2020</span>
+                    </div>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-right">
+                      <h3 class="position">Bachelor in Engineering</h3>
+                      <h4 class="position">GPA - 7.52</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    
+    </section><!-- /Education Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+        <p>Projects that highlight my expertise in cloud platforms, machine learning, and full-stack development</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <div class="portfolio-filters-container" data-aos="fade-up" data-aos-delay="200">
+            <ul class="portfolio-filters isotope-filters">
+              <li data-filter="*" class="filter-active">All Work</li>
+              <li data-filter=".filter-projects">Projects</li>
+              <li data-filter=".filter-workshops">Workshops</li>
+            </ul>
+          </div>
+
+          <div class="row g-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-projects">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/machine_learning.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <!-- <a href="assets/img/portfolio/portfolio-1.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a> -->
+                      <a href="https://github.com/Kartik-Hirijaganer/Survival-Prediction" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Machine Learning</span>
+                  <h3>Predicting Patient Survival</h3>
+                  <ul>
+                    <li>
+                      <p>Developed a predictive model focused on predicting survival rates for patients undergoing HCT</p>
+                    </li>
+                    <li>
+                      <p>Built XGBoost and Cox-Proportional Hazard models to evaluate the impact of covariates improving accuracy to 71%</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-projects">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/genAI.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <!-- <a href="assets/img/portfolio/portfolio-10.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-graphics"><i class="bi bi-eye"></i></a> -->
+                      <!-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Generative AI</span>
+                  <h3>GenAI Affiliate Workflow Automation</h3>
+                  <ul>
+                    <li><p>Developed a GenAI Agent to autonomously fill and submit vendor affiliate application forms using OpenAI APIs</p></li>
+                    <li><p>Leveraged Selenium for dynamic web navigation and Chat-GPT 4o model for field-value mapping, reducing workflow time by
+                    approximately 80%</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-projects">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/dataPipelie.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <!-- <a href="assets/img/portfolio/portfolio-7.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-motion"><i class="bi bi-eye"></i></a> -->
+                      <a href="https://github.com/Kartik-Hirijaganer/YouTube-Analysis-using-AWS" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Data Pipeline</span>
+                  <h3>YouTube Trending Insights – AWS Data Pipeline</h3>
+                  <ul>
+                    <li>
+                      <p>Built an end-to-end data pipeline using AWS to analyze YouTube trending metrics, leveraging Glue ETL and S3 for data
+                      processing and storage</p>
+                    </li>
+                    <li>
+                      <p>Developed interactive dashboards with Athena and QuickSight to visualize video trends, engagement, and performance
+                      metrics</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-projects">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/data_analysis.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://github.com/Kartik-Hirijaganer/Suicide_Analysis" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Data Analysis</span>
+                  <h3>Suicide Analysis on World Data</h3>
+                  <ul>
+                    <li>
+                      <p>Developed an explanatory model on World Bank data to uncover key drivers of global suicide rates</p>
+                    </li>
+                    <li>
+                      <p>Addressed multicollinearity, non-normality, and heteroscedasticity; used SHAP for factor analysis</p>
+                    </li>
+                    <li>
+                      <p>Identified top 4 influencing factors using decision trees, importance plots, and partial dependence charts</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-projects">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/project_management.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <!-- <a href="assets/img/portfolio/portfolio-2.webp" class="glightbox preview-link" data-gallery="portfolio-gallery-web"><i class="bi bi-eye"></i></a> -->
+                      <!-- <a href="portfolio-details.html" class="details-link"><i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Project Management</span>
+                  <h3>PM Simulation – DeliveryCorps</h3>
+                  <ul>
+                    <li>
+                      <p>Led the end-to-end DeliveryCorps project lifecycle, simulating a real-world project manager role</p>
+                    </li>
+                    <li>
+                      <p>Facilitated sprint standups and retrospectives to drive transparency and alignment</p>
+                    </li>
+                    <li>
+                      <p>Defined scope, built Gantt-based schedules, estimated timelines and costs, and optimized resource allocation</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-projects">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/full_stack.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://github.com/Kartik-Hirijaganer/Personal-Finance-Manager" class="details-link"><i class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">Full Stack Development</span>
+                  <h3>Personal Finance Tracker</h3>
+                  <ul>
+                    <li>
+                      <p>Developed a full-stack website enabling users to track and monitor their finances effortlessly</p>
+                    </li>
+                    <li>
+                      <p>Features include account management, a summary dashboard, tracking monthly income, expenses and liabilities,
+                      with a downloadable six-month cashflow chart in PDF format</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-6 col-md-6 portfolio-item isotope-item filter-workshops">
+              <div class="portfolio-card">
+                <div class="portfolio-image">
+                  <img src="assets/img/portfolio/workshop.png" class="img-fluid" alt="" loading="lazy">
+                  <div class="portfolio-overlay">
+                    <div class="portfolio-actions">
+                      <a href="https://github.com/Kartik-Hirijaganer/AI-Workshop" class="details-link"><i
+                          class="bi bi-arrow-right"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <span class="category">AI Workshop</span>
+                  <h3>Smart Inventory Bot</h3>
+                  <p>This AI agent acts as a helpful data engineer and sales assistant. It takes user input, intelligently generates a SQL
+                  query using OpenAI, executes it on a MySQL database, and returns the results in a presentable format.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Certificates</h2>
+        <div class="title-shape">
+          <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 0,10 C 40,0 60,20 100,10 C 140,0 160,20 200,10" fill="none" stroke="currentColor" stroke-width="2"></path>
+          </svg>
+        </div>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="testimonials-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "slidesPerView": 1,
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "navigation": {
+                "nextEl": ".swiper-button-next",
+                "prevEl": ".swiper-button-prev"
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8" style="text-align: center;margin-top: 9.375rem;">
+                    <h2>AWS Certified Data Engineer - Associate</h2>
+                    <p>Issued January 2025</p>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/certificates/data_engineer_cert.png" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8" style="text-align: center;margin-top: 9.375rem;">
+                    <h2>AWS Certified Developer - Associate</h2>
+                    <p>Issued Januray 2022</p>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/certificates/developer_associate_cert.png" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row">
+                  <div class="col-lg-8" style="text-align: center;margin-top: 9.375rem;">
+                      <h2>Certified Scrum Master - Scrum Alliance</h2>
+                      <p>Issued July 2024</p>
+                  </div>
+                  <div class="col-lg-4 d-none d-lg-block">
+                    <div class="featured-img-wrapper">
+                      <img src="assets/img/certificates/csm_cert.png" class="featured-img" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Testimonial Item -->
+          </div>
+
+          <div class="swiper-navigation w-100 d-flex align-items-center justify-content-center">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Certificates Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <div class="content" data-aos="fade-up" data-aos-delay="200">
+              <div class="section-category mb-3">Contact</div>
+              <h2 class="display-5 mb-4">Lets Connect!</h2>
+              <p class="lead mb-4">I'm actively seeking full-time opportunities in Data Engineering, AI/ML, and Analytics.
+              If you're a recruiter, hiring manager, or collaborator interested in my background, feel free to reach out. I’d be happy
+              to discuss how I can contribute to your team.</p>
+
+              <div class="contact-info mt-5">
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-envelope-at me-3"></i>
+                  <span>hirijaganer.kartik.16ee1056@gmail.com</span>
+                </div>
+
+                <div class="info-item d-flex mb-3">
+                  <i class="bi bi-telephone me-3"></i>
+                  <span>+1 240 854 7848</span>
+                </div>
+
+                <div class="info-item d-flex mb-4">
+                  <i class="bi bi-geo-alt me-3"></i>
+                  <span>4330 Hartwick Road, College Park, MD 20740</span>
+                </div>
+
+                <a href="https://maps.app.goo.gl/1fX6fu8URdTQsKDY8" class="map-link d-inline-flex align-items-center">
+                  Open Map
+                  <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="contact-form card" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-body p-4 p-lg-5">
+
+                <form id="contact-form" class="php-email-form">
+                  <div class="row gy-4">
+                
+                    <div class="col-12">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                
+                    <div class="col-12">
+                      <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                
+                    <div class="col-12">
+                      <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                    </div>
+                
+                    <div class="col-12">
+                      <textarea name="message" class="form-control" rows="6" placeholder="Message" required></textarea>
+                    </div>
+                
+                    <div class="col-12 text-center">
+                      <div class="loading" style="display:none;">Loading</div>
+                      <div class="sent-message">Your message has been drafted in Gmail.</div>
+                      <button type="submit" class="btn btn-submit w-100">Submit Message</button>
+                    </div>
+                
+                  </div>         
+                </form>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">EasyFolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/Kartik-Hirijaganer"><i class="bi bi-github"></i></a>
+        <a href="https://www.instagram.com/__kartik98__"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/kartik-hirijaganer"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+
 </body>
 
 </html>
