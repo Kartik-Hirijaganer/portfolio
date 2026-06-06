@@ -1,0 +1,8 @@
+# OS files
+.DS_Store
+
+# Claude Code local (machine-specific) settings — keep settings.json shared, ignore the local override
+.claude/settings.local.json
+
+# GitHub Pages build output (created in CI by the deploy workflow)
+dist/

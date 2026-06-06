@@ -1,5 +1,4 @@
 /**
-* Template Name: EasyFolio
 * Template URL: https://bootstrapmade.com/easyfolio-bootstrap-portfolio-template/
 * Updated: Feb 21 2025 with Bootstrap v5.3.3
 * Author: BootstrapMade.com
@@ -242,3 +241,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+// Skeleton reveal: keep skeletons visible >= MIN_MS, then fade in real content
+(function () {
+  const MIN_MS = 800, start = performance.now();
+  function reveal() {
+    const wait = Math.max(0, MIN_MS - (performance.now() - start));
+    setTimeout(() => document.body.classList.add('loaded'), wait);
+  }
+  window.addEventListener('load', reveal);
+  setTimeout(reveal, 3000);
+})();
