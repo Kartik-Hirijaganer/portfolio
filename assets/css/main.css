@@ -1995,6 +1995,34 @@ h3 {
   color: var(--accent-color);
 }
 
+.keyword-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.keyword-tags li {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0.35rem 0.6rem;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 60%);
+  border-radius: 6px;
+  color: var(--heading-color);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 94%);
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.hero .hero-keywords {
+  max-width: 680px;
+  margin: 0 0 1.5rem;
+}
+
 .about .personal-info .info-item .value {
   overflow-wrap: anywhere;
 }
@@ -2068,6 +2096,19 @@ h3 {
 
 .portfolio .proof-tags i {
   color: var(--accent-color);
+}
+
+.portfolio .project-keywords {
+  margin: 0 0 1rem;
+}
+
+.portfolio .project-keywords li {
+  min-height: 28px;
+  padding: 0.3rem 0.5rem;
+  border-color: color-mix(in srgb, var(--heading-color), transparent 84%);
+  color: color-mix(in srgb, var(--default-color), transparent 18%);
+  background-color: color-mix(in srgb, var(--heading-color), transparent 97%);
+  font-size: 0.75rem;
 }
 
 .portfolio .project-links {
@@ -2159,6 +2200,27 @@ h3 {
   line-height: 1.55;
 }
 
+.resume .role-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: -0.2rem 0 1rem;
+}
+
+.resume .role-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid color-mix(in srgb, var(--heading-color), transparent 86%);
+  border-radius: 6px;
+  color: var(--heading-color);
+  background-color: color-mix(in srgb, var(--heading-color), transparent 97%);
+  font-size: 0.77rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
 .skills .skills-intro {
   max-width: 760px;
   margin-bottom: 2rem;
@@ -2172,6 +2234,24 @@ h3 {
 .skills .skills-intro p {
   margin: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.skills .role-keyword-panel {
+  margin: 0 0 2rem;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 56%);
+  border-radius: 8px;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
+}
+
+.skills .role-keyword-panel h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.2rem;
+}
+
+.skills .role-keyword-panel p {
+  margin: 0 0 1rem;
+  color: color-mix(in srgb, var(--default-color), transparent 28%);
 }
 
 .skills .skill-tier {
