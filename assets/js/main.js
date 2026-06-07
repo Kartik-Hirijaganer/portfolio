@@ -181,19 +181,24 @@
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */
+  function scrollToHashTarget(behavior = 'smooth') {
+    if (!window.location.hash || !document.querySelector(window.location.hash)) return;
+
+    let section = document.querySelector(window.location.hash);
+    let scrollMarginTop = parseInt(getComputedStyle(section).scrollMarginTop) || 0;
+    window.scrollTo({
+      top: section.offsetTop - scrollMarginTop,
+      behavior
+    });
+  }
+
   window.addEventListener('load', function(e) {
-    if (window.location.hash) {
-      if (document.querySelector(window.location.hash)) {
-        setTimeout(() => {
-          let section = document.querySelector(window.location.hash);
-          let scrollMarginTop = getComputedStyle(section).scrollMarginTop;
-          window.scrollTo({
-            top: section.offsetTop - parseInt(scrollMarginTop),
-            behavior: 'smooth'
-          });
-        }, 100);
-      }
-    }
+    setTimeout(() => scrollToHashTarget('smooth'), 100);
+    setTimeout(() => scrollToHashTarget('auto'), 900);
+  });
+
+  window.addEventListener('hashchange', function() {
+    setTimeout(() => scrollToHashTarget('smooth'), 50);
   });
 
   /**

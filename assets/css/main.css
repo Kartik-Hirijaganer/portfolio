@@ -1967,6 +1967,47 @@ h3 {
 /*--------------------------------------------------------------
 # Portfolio Refresh Additions
 --------------------------------------------------------------*/
+.section-category {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent-color);
+}
+
+.hero .availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: fit-content;
+  margin-bottom: 1rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 65%);
+  border-radius: 8px;
+  color: var(--heading-color);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 94%);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.hero .availability-badge i {
+  color: var(--accent-color);
+}
+
+.about .personal-info .info-item .value {
+  overflow-wrap: anywhere;
+}
+
+.contact .contact-info .info-item a {
+  color: var(--heading-color);
+  overflow-wrap: anywhere;
+}
+
+.contact .contact-info .info-item a:hover {
+  color: var(--accent-color);
+}
+
 .skills .skill-box {
   min-height: 86px;
   display: flex;
@@ -2003,6 +2044,241 @@ h3 {
     color-mix(in srgb, var(--accent-color), transparent 90%) 37%,
     color-mix(in srgb, var(--heading-color), transparent 95%) 63%);
   background-size: 200% 100%;
+}
+
+.portfolio .proof-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio .proof-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid color-mix(in srgb, var(--heading-color), transparent 86%);
+  border-radius: 6px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  background-color: color-mix(in srgb, var(--heading-color), transparent 97%);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.portfolio .proof-tags i {
+  color: var(--accent-color);
+}
+
+.portfolio .project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.25rem;
+}
+
+.portfolio .project-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 45%);
+  border-radius: 8px;
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.portfolio .project-links a:hover {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+}
+
+.proof-points {
+  margin-top: 4rem;
+}
+
+.proof-points-header {
+  max-width: 760px;
+  margin-bottom: 1.75rem;
+}
+
+.proof-points-header h3 {
+  margin: 0.35rem 0 0.75rem;
+  font-size: 1.7rem;
+}
+
+.proof-points-header p {
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.proof-card {
+  height: 100%;
+  padding: 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--heading-color), transparent 88%);
+  border-radius: 8px;
+  background-color: var(--surface-color);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+  scroll-margin-top: 110px;
+}
+
+.proof-card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.proof-card-title i {
+  color: var(--accent-color);
+  font-size: 1.45rem;
+}
+
+.proof-card-title h4 {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.proof-card dl {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  gap: 0.6rem 1rem;
+  margin: 0;
+}
+
+.proof-card dt {
+  color: var(--heading-color);
+  font-weight: 700;
+}
+
+.proof-card dd {
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  line-height: 1.55;
+}
+
+.skills .skills-intro {
+  max-width: 760px;
+  margin-bottom: 2rem;
+}
+
+.skills .skills-intro h2 {
+  margin: 0.35rem 0 0.75rem;
+  font-size: 2rem;
+}
+
+.skills .skills-intro p {
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.skills .skill-tier {
+  height: 100%;
+  padding: 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--heading-color), transparent 88%);
+  border-radius: 8px;
+  background-color: var(--surface-color);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.skills .skill-tier-primary {
+  border-color: color-mix(in srgb, var(--accent-color), transparent 50%);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 96%);
+}
+
+.skills .tier-heading {
+  margin-bottom: 1.2rem;
+}
+
+.skills .tier-heading span {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  color: var(--accent-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.skills .tier-heading h3 {
+  margin: 0;
+  color: var(--heading-color);
+  font-size: 1.2rem;
+}
+
+.skills .skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills .skill-tags li {
+  padding: 0.45rem 0.6rem;
+  border-radius: 6px;
+  background-color: color-mix(in srgb, var(--heading-color), transparent 94%);
+  color: color-mix(in srgb, var(--default-color), transparent 15%);
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+
+.skills .domain-depth {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border: 1px solid color-mix(in srgb, var(--heading-color), transparent 88%);
+  border-radius: 8px;
+  background-color: var(--surface-color);
+}
+
+.skills .domain-depth h3 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+}
+
+.skills .domain-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.skills .domain-grid div {
+  padding-left: 1rem;
+  border-left: 3px solid color-mix(in srgb, var(--accent-color), transparent 35%);
+}
+
+.skills .domain-grid strong,
+.skills .domain-grid span {
+  display: block;
+}
+
+.skills .domain-grid strong {
+  color: var(--heading-color);
+  margin-bottom: 0.35rem;
+}
+
+.skills .domain-grid span {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .proof-card dl {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+
+  .proof-card dd {
+    margin-bottom: 0.8rem;
+  }
+
+  .skills .domain-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* Skeleton Loading (theme-driven shimmer) */
