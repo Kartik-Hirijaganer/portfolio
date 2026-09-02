@@ -120,19 +120,122 @@
   /**
    * Init isotope layout and filters
    */
+  function initProjectPagination(layoutElement, isotopeInstance) {
+    const pagination = layoutElement.querySelector('[data-project-pagination]');
+    if (!pagination) return;
+
+    const grid = layoutElement.querySelector('.isotope-container');
+    const controls = pagination.querySelector('[data-project-pagination-controls]');
+    const status = pagination.querySelector('[data-project-pagination-status]');
+    const projectItems = Array.from(grid.querySelectorAll('.filter-projects'));
+    let pageSize = window.matchMedia('(max-width: 767px)').matches ? 2 : 4;
+    let currentPage = 1;
+    let resizeTimer;
+
+    function createPageButton(label, options = {}) {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'project-page-button';
+      button.textContent = label;
+
+      if (options.ariaLabel) button.setAttribute('aria-label', options.ariaLabel);
+      if (options.current) button.setAttribute('aria-current', 'page');
+      if (options.page) button.dataset.page = options.page;
+      button.disabled = Boolean(options.disabled);
+      button.addEventListener('click', options.onClick);
+
+      return button;
+    }
+
+    function renderPage({ moveFocus = false } = {}) {
+      const totalPages = Math.max(1, Math.ceil(projectItems.length / pageSize));
+      currentPage = Math.min(currentPage, totalPages);
+      const startIndex = (currentPage - 1) * pageSize;
+      const endIndex = Math.min(startIndex + pageSize, projectItems.length);
+
+      isotopeInstance.arrange({
+        filter: (itemElement) => {
+          const itemIndex = projectItems.indexOf(itemElement);
+          return itemIndex >= startIndex && itemIndex < endIndex;
+        }
+      });
+
+      status.textContent = `Showing projects ${startIndex + 1}–${endIndex} of ${projectItems.length}`;
+      controls.replaceChildren();
+
+      controls.appendChild(createPageButton('Previous', {
+        ariaLabel: 'Show previous project page',
+        disabled: currentPage === 1,
+        onClick: () => {
+          currentPage -= 1;
+          renderPage({ moveFocus: true });
+        }
+      }));
+
+      for (let page = 1; page <= totalPages; page += 1) {
+        controls.appendChild(createPageButton(String(page), {
+          ariaLabel: `Show project page ${page}`,
+          current: page === currentPage,
+          page,
+          onClick: () => {
+            currentPage = page;
+            renderPage({ moveFocus: true });
+          }
+        }));
+      }
+
+      controls.appendChild(createPageButton('Next', {
+        ariaLabel: 'Show next project page',
+        disabled: currentPage === totalPages,
+        onClick: () => {
+          currentPage += 1;
+          renderPage({ moveFocus: true });
+        }
+      }));
+
+      pagination.hidden = totalPages <= 1;
+
+      if (moveFocus) {
+        grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        requestAnimationFrame(() => {
+          controls.querySelector(`[data-page="${currentPage}"]`)?.focus({ preventScroll: true });
+        });
+      }
+    }
+
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        const nextPageSize = window.matchMedia('(max-width: 767px)').matches ? 2 : 4;
+        if (nextPageSize === pageSize) return;
+
+        const firstVisibleItem = (currentPage - 1) * pageSize;
+        pageSize = nextPageSize;
+        currentPage = Math.floor(firstVisibleItem / pageSize) + 1;
+        renderPage();
+      }, 150);
+    });
+
+    renderPage();
+  }
+
   document.querySelectorAll('.isotope-layout').forEach(function(isotopeItem) {
     let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
     let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
     let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
 
-    let initIsotope;
-    imagesLoaded(isotopeItem.querySelector('.isotope-container'), function() {
-      initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
-        itemSelector: '.isotope-item',
-        layoutMode: layout,
-        filter: filter,
-        sortBy: sort
-      });
+    const isotopeContainer = isotopeItem.querySelector('.isotope-container');
+    const initIsotope = new Isotope(isotopeContainer, {
+      itemSelector: '.isotope-item',
+      layoutMode: layout,
+      filter: filter,
+      sortBy: sort
+    });
+
+    initProjectPagination(isotopeItem, initIsotope);
+
+    imagesLoaded(isotopeContainer, function() {
+      initIsotope.layout();
     });
 
     isotopeItem.querySelectorAll('.isotope-filters li').forEach(function(filters) {
