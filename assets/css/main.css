@@ -1049,6 +1049,7 @@ h3 {
   align-items: flex-start;
   margin-bottom: 2.5rem;
   position: relative;
+  scroll-margin-top: 110px;
 }
 
 .resume .resume-wrapper .timeline .timeline-item:last-child {
@@ -2136,6 +2137,79 @@ h3 {
   color: var(--contrast-color);
 }
 
+.portfolio .portfolio-card:focus-within .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio .portfolio-card:focus-within .portfolio-overlay .portfolio-actions {
+  transform: translateY(0);
+}
+
+.portfolio .project-links a:focus-visible,
+.portfolio .portfolio-card .portfolio-overlay .portfolio-actions a:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent-color), transparent 25%);
+  outline-offset: 3px;
+}
+
+.portfolio .isotope-container {
+  scroll-margin-top: 120px;
+}
+
+.portfolio .project-pagination {
+  display: grid;
+  justify-items: center;
+  gap: 0.8rem;
+  margin-top: 2.25rem;
+}
+
+.portfolio .project-pagination[hidden] {
+  display: none;
+}
+
+.portfolio .project-pagination-status {
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 0.9rem;
+}
+
+.portfolio .project-pagination-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.portfolio .project-page-button {
+  min-width: 42px;
+  min-height: 42px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 45%);
+  border-radius: 8px;
+  color: var(--accent-color);
+  background-color: var(--surface-color);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.portfolio .project-page-button[aria-current="page"],
+.portfolio .project-page-button:not(:disabled):hover {
+  border-color: var(--accent-color);
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+}
+
+.portfolio .project-page-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.portfolio .project-page-button:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--accent-color), transparent 25%);
+  outline-offset: 3px;
+}
+
 .proof-points {
   margin-top: 4rem;
 }
@@ -2198,6 +2272,118 @@ h3 {
   margin: 0;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
   line-height: 1.55;
+}
+
+.workshops .workshop-card {
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--heading-color), transparent 88%);
+  border-radius: 15px;
+  background-color: var(--surface-color);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+}
+
+.workshops .applied-learning-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.workshops .workshop-image {
+  height: 100%;
+  min-height: 380px;
+  background-color: color-mix(in srgb, var(--heading-color), transparent 95%);
+}
+
+.workshops .workshop-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.workshops .workshop-content {
+  height: 100%;
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+}
+
+.workshops .workshop-content h3 {
+  margin: 0.45rem 0 0.65rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.workshops .workshop-context {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  font-weight: 600;
+}
+
+.workshops .workshop-context i {
+  flex: 0 0 auto;
+  color: var(--accent-color);
+}
+
+.workshops .workshop-keywords {
+  margin-bottom: 1.5rem;
+}
+
+.workshops .workshop-content > p:not(.workshop-context) {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  line-height: 1.65;
+}
+
+.workshops .agent-flow {
+  display: grid;
+  gap: 0.8rem;
+  margin: 0;
+  padding-left: 1.2rem;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+.workshops .agent-flow li {
+  padding-left: 0.25rem;
+  line-height: 1.6;
+}
+
+.workshops .agent-flow li::marker {
+  color: var(--accent-color);
+}
+
+.workshops .workshop-note {
+  margin-top: 1.5rem;
+  padding: 1rem 1.1rem;
+  border-left: 3px solid var(--accent-color);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+}
+
+.workshops .workshop-note h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.workshops .workshop-note p {
+  margin: 0;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  line-height: 1.55;
+}
+
+@media (max-width: 991px) {
+  .workshops .workshop-image {
+    min-height: 300px;
+    max-height: 380px;
+  }
+}
+
+@media (max-width: 575px) {
+  .workshops .workshop-image {
+    min-height: 240px;
+  }
+
+  .workshops .workshop-content {
+    padding: 1.35rem;
+  }
 }
 
 .resume .role-tags {
@@ -2344,6 +2530,30 @@ h3 {
 .skills .domain-grid span {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   line-height: 1.5;
+}
+
+.testimonials .certification-status-card {
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials .certification-status-card .certification-status {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid color-mix(in srgb, var(--accent-color), transparent 50%);
+  border-radius: 50px;
+  color: var(--accent-color);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 94%);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.testimonials .certification-status-card p {
+  margin-bottom: 0;
 }
 
 @media (max-width: 768px) {
